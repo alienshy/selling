@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.con {
+  padding: 0 32px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  width: 100%;
+}
+header .headercon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .headercon .linkaccount {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  gap: 4px;
+}
+header .headercon .linkaccount i {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 9999px;
+  transition: 0.3s ease;
+}
+header .headercon .linkaccount i:hover {
+  color: rgb(255, 94, 0);
+}
+header .headercon .about {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: center;
+  gap: 20px;
+}
+header .headercon .about span {
+  display: flex;
+  gap: 10px;
+}
+header .headercon .about span i {
+  color: rgb(255, 94, 0);
+}
+header .headercon .about span p {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */
