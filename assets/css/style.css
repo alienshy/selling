@@ -18,13 +18,12 @@ header .headercon {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
 }
 header .headercon .linkaccount {
   width: 20%;
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 20px;
   gap: 4px;
 }
 header .headercon .linkaccount i {
@@ -39,22 +38,321 @@ header .headercon .linkaccount i {
   transition: 0.3s ease;
 }
 header .headercon .linkaccount i:hover {
-  color: rgb(255, 94, 0);
+  color: #F16821;
 }
 header .headercon .about {
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 25px;
   justify-content: center;
   gap: 20px;
 }
 header .headercon .about span {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 header .headercon .about span i {
-  color: rgb(255, 94, 0);
+  color: #F16821;
 }
 header .headercon .about span p {
   font-size: 18px;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+nav .navcon {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .navcon a {
+  font-size: 40px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  color: black;
+}
+nav .navcon a span {
+  color: #F16821;
+}
+nav .navcon ul {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+nav .navcon ul a {
+  padding-top: 20px;
+  font-family: none;
+  font-weight: 50;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+nav .navcon ul a:hover {
+  color: #F16821;
+}
+
+section {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg");
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section .sectioncon {
+  padding: 150px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+section .sectioncon h1 {
+  font-weight: 900;
+  font-size: 80px;
+  font-style: normal;
+  color: white;
+  line-height: 96px;
+}
+section .sectioncon p {
+  width: 60%;
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+  line-height: 30px;
+  font-family: "Mulish", sans-serif;
+}
+section .sectioncon div {
+  padding-top: 40px;
+  display: flex;
+  gap: 5px;
+}
+section .sectioncon div .button1 {
+  padding: 15px 40px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  transition: 0.4s ease;
+}
+section .sectioncon div .button1:hover {
+  color: black;
+  background-color: white;
+}
+section .sectioncon div .button2 {
+  padding: 15px 40px;
+  border: 3px solid white;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  transition: 0.4s ease;
+}
+section .sectioncon div .button2:hover {
+  color: rgb(255, 253, 253);
+  background-color: transparent;
+}
+
+main {
+  width: 100%;
+}
+main .maincon {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  gap: 10px;
+}
+main .maincon h3 {
+  font-weight: 700;
+  color: rgb(173, 181, 189);
+  font-size: 18px;
+  text-align: center;
+  font-family: normal;
+}
+main .maincon h1 {
+  font-weight: 1000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 48px;
+  color: black;
+}
+main .maincon p {
+  width: 90%;
+  color: rgb(128, 128, 128);
+  font-size: 19px;
+  line-height: 27.3px;
+  transform: none;
+  text-align: center;
+}
+main .searchcon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0 100px 0;
+  align-items: center;
+}
+main .searchcon input {
+  width: 200px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  outline: 1px solid rgb(0, 0, 0);
+  font-size: 20px;
+}
+main .searchcon select {
+  width: 100px;
+  padding: 5px;
+  outline: 1px solid rgb(0, 0, 0);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    width: 100%;
+  }
+  main .maincon {
+    width: 100%;
+    padding: 10px;
+  }
+  main .maincon p {
+    width: 70%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+  main .maincon {
+    padding: 10px;
+  }
+  main .maincon p {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.cards {
+  width: 100%;
+}
+.cards .cardscon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cards .cardscon .card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 calc(33% - 20px);
+  max-width: calc(33% - 20px);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.cards .cardscon .card .imgdiv {
+  width: 100%;
+}
+.cards .cardscon .card .imgdiv img {
+  width: 100%;
+  height: auto;
+}
+.cards .cardscon .card .two {
+  font-size: 15px;
+  color: black;
+  transition: 0.3S ease;
+}
+.cards .cardscon .card .two:hover {
+  color: #f16821;
+}
+.cards .cardscon .card .ard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.cards .cardscon .card .ard .star {
+  gap: 10px;
+  display: flex;
+}
+.cards .cardscon .card .ard .star .bi-star-fill {
+  color: #f16821;
+}
+.cards .cardscon .card .ard .star p {
+  color: #f16821;
+}
+.cards .cardscon .card .ard .heart {
+  display: flex;
+  gap: 10px;
+}
+.cards .cardscon .card .ard .heart .bi-heart-fill {
+  color: rgb(255, 0, 0);
+}
+.cards .cardscon .card .ard .heart p {
+  color: rgb(255, 0, 0);
+}
+.cards .cardscon .card .lorem {
+  color: rgb(128, 128, 128);
+}
+.cards .cardscon .card .viewbutton {
+  display: flex;
+  gap: 5px;
+}
+.cards .cardscon .card .viewbutton .button3 {
+  padding: 15px 40px;
+  border: 3px solid white;
+  background-color: rgb(0, 0, 0);
+  transition: 0.4s ease;
+}
+.cards .cardscon .card .viewbutton .button3 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.cards .cardscon .card .viewbutton .button3:hover a {
+  color: rgb(0, 0, 0);
+}
+.cards .cardscon .card .viewbutton .button3:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+}
+.cards .cardscon .card .viewbutton .button4 {
+  padding: 15px 40px;
+  border: 3px solid white;
+  background-color: white;
+  border: 2px solid black;
+  transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.cards .cardscon .card .viewbutton .button4 a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.cards .cardscon .card .viewbutton .button4:hover a {
+  color: rgb(255, 255, 255);
+}
+.cards .cardscon .card .viewbutton .button4:hover {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 900px) {
+  .cards .cardscon .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards .cardscon .card {
+    flex: 1 1 calc(100% - 20px);
+    max-width: calc(100% - 20px);
+  }
 }/*# sourceMappingURL=style.css.map */

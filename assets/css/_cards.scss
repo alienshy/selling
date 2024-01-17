@@ -1,0 +1,135 @@
+.cards{
+    width: 100%;
+    .cardscon{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        gap: 20px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 calc(33% - 20px);
+            max-width: calc(33% - 20px);
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .imgdiv{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .two{
+                font-size: 15px;
+                color: black;
+                transition: 0.3S ease;
+                &:hover{
+                    color: #f16821;
+                }
+            }
+            .ard{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                .star{
+                    gap: 10px;
+                    display: flex;
+                    .bi-star-fill{
+                        color: #f16821;
+                    }
+                    p{
+                        color: #f16821;
+                    }
+
+                }
+                .heart{
+                    display: flex;
+                    gap: 10px;
+                    .bi-heart-fill{
+                        color: rgb(255, 0, 0);
+                    }
+                    p{
+                        color: rgb(255, 0, 0);
+                    }
+
+                }
+            }
+            .lorem{
+                color: rgb(128,128,128);
+
+            }
+            .viewbutton{
+                display: flex;
+                gap: 5px;
+                .button3{
+                        padding: 15px 40px;
+                        border: 3px solid white;
+                        background-color: rgb(0, 0, 0);
+                        a{
+                            text-decoration: none;
+                            color:rgb(255, 255, 255)
+                        }
+                        transition: 0.4s ease;
+                        &:hover a{
+                            color: rgb(0, 0, 0);
+
+                        }
+                        &:hover{
+                            background-color: rgb(255, 255, 255);
+                            border: 2px solid black;
+
+                    }
+
+                }
+                .button4{
+                    padding: 15px 40px;
+                    border: 3px solid white;
+                    background-color: white;
+                    border: 2px solid black;
+                    transition: 0.4s ease;
+                    a{
+                        text-decoration: none;
+                        color:rgb(0, 0, 0)
+                    }
+                    transition: 0.4s ease;
+                    &:hover a{
+                        color: rgb(255, 255, 255);
+
+                    }
+                    &:hover{
+                        background-color: rgb(0, 0, 0);
+                        border: 2px solid black;
+
+                }
+
+            }
+            }
+
+        }
+}
+}
+@media screen and (max-width:900px){
+    .cards{
+        .cardscon{
+            .card{
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+    }
+    }
+    
+}
+@media screen and (max-width:600px){
+    .cards{
+        .cardscon{
+            .card{
+                flex: 1 1 calc(100% - 20px);
+                max-width: calc(100% - 20px);
+            }
+    }
+    }
+    
+}
