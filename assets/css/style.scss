@@ -8,12 +8,16 @@
     margin: 0 auto;
     max-width: 1200px;
 }
-
+.scroll{
+    background-color: white;
+    transition: 0.2s ease;
+}
 
 
 
 @import 'header';
 @import 'nav';
+@import 'menu';
 @import 'section';
 @import 'main';
 @import 'cards';

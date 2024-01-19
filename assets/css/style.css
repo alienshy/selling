@@ -10,8 +10,14 @@
   max-width: 1200px;
 }
 
+.scroll {
+  background-color: white;
+  transition: 0.2s ease;
+}
+
 header {
   width: 100%;
+  height: 80px;
 }
 header .headercon {
   width: 100%;
@@ -20,7 +26,7 @@ header .headercon {
   align-items: center;
 }
 header .headercon .linkaccount {
-  width: 20%;
+  width: 200px;
   display: flex;
   align-items: center;
   padding: 20px 20px;
@@ -59,9 +65,13 @@ header .headercon .about span p {
   font-size: 18px;
 }
 
+@media screen and (max-width: 900px) {
+  header .headercon .about span p {
+    display: none;
+  }
+}
 nav {
   width: 100%;
-  position: fixed;
   background-color: white;
 }
 nav .navcon {
@@ -82,10 +92,9 @@ nav .navcon a span {
   color: #F16821;
 }
 nav .navcon ul {
-  width: 65%;
   display: flex;
   justify-content: space-between;
-  gap: 25px;
+  gap: 18px;
 }
 nav .navcon ul a {
   padding-top: 20px;
@@ -97,7 +106,99 @@ nav .navcon ul a {
 nav .navcon ul a:hover {
   color: #F16821;
 }
+nav .navcon .bi-list {
+  font-size: 33px;
+  color: black;
+  display: none;
+}
 
+@media screen and (max-width: 900px) {
+  nav {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  }
+  nav .navcon {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .navcon a {
+    font-size: 40px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+  }
+  nav .navcon a span {
+    color: #F16821;
+  }
+  nav .navcon ul {
+    display: none;
+  }
+  nav .navcon .bi-list {
+    font-size: 33px;
+    color: black;
+    display: block;
+  }
+}
+.menu {
+  width: 200px;
+  padding: 50px 10px;
+  position: absolute;
+  height: 600px;
+  display: none;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+}
+.menu .bi-x {
+  font-size: 40px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.menu ul a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.menu ul a:hover {
+  color: #f16821;
+}
+
+@media screen and (min-width: 900px) {
+  .menu {
+    display: none;
+    z-index: -100;
+  }
+  .menu .bi-x {
+    font-size: 40px;
+    position: absolute;
+    display: none;
+    top: 30px;
+  }
+  .menu ul {
+    display: none;
+    height: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .menu ul a {
+    font-size: 20px;
+    color: black;
+  }
+}
 section {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://preview.colorlib.com/theme/selling/images/hero_2.jpg");
   width: 100%;

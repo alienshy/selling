@@ -1,0 +1,57 @@
+.menu{
+    width: 200px;
+    padding: 50px 10px;
+    position: absolute;
+    height: 600px;
+    display: none;
+    right: 0px;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    .bi-x{
+        font-size: 40px;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        a{
+            font-size: 20px;
+            color:black;
+            text-decoration: none;
+            transition: 0.3s ease;
+            &:hover{
+                color: #f16821;
+            }
+
+        }
+    }
+}
+@media screen and (min-width:900px){
+    .menu{
+        display: none;
+        z-index: -100;
+        .bi-x{
+            font-size: 40px;
+            position: absolute;
+            display: none;
+            top: 30px;
+        }
+        ul{
+
+            display: none;
+            height: 0;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 30px;
+            a{
+                font-size: 20px;
+                color:black;
+    
+            }
+        }
+    }
+}

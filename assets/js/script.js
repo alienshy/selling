@@ -1,22 +1,20 @@
 window.addEventListener("scroll",()=>{
-    if(window.scrollY > 100){
-        document.querySelector(".header").style.top = "-200px"
+    if(window.scrollY > 0){
+        document.querySelector(".scroll").style.top = "-80px";
     }
     else{
-        
+        document.querySelector(".scroll").style.top = "0px";
     }
 })
 
 
 
-
-
-
-
-
-
-
-
+document.querySelector(".bi-list").addEventListener("click",()=>{
+    document.querySelector(".menu").style.display = "flex";
+})
+document.querySelector(".bi-x").addEventListener("click", () => {
+    document.querySelector(".menu").style.display = "none";
+})
 
 
 
@@ -61,6 +59,10 @@ filter.forEach(e => {
 funnam()
 
 
+
+///////search///
+
+
 search.addEventListener("input",(el)=>{
     filter = copy;
     filter = filter.filter((y)=>{
@@ -85,4 +87,3 @@ funnam()
 })
 
 
-/////delete////

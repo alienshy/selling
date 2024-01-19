@@ -1,12 +1,13 @@
 header{
     width: 100%;
+    height: 80px;
     .headercon{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .linkaccount{
-            width: 20%;
+            width: 200px;
             display: flex;
             align-items: center;
             padding: 20px 20px;
@@ -41,6 +42,20 @@ header{
                 }
                 p{
                     font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px){
+    header{
+        .headercon{
+            .about{
+
+                span{
+                    p{
+                        display: none;
+                    }
                 }
             }
         }
